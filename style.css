@@ -1,0 +1,11 @@
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/container.css";
+@import "blocks/header.css";
+@import "blocks/breadcrumbs.css";
+@import "blocks/page-content.css";
+@import "blocks/banners.css";
+@import "blocks/image-box.css";
+@import "blocks/footer.css";
+@import "blocks/text__1.css";
+@import "blocks/text__2.css";
