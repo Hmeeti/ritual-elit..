@@ -1,11 +1,272 @@
-@import "global/fonts.css";
-@import "global/reboot.css";
-@import "global/container.css";
-@import "blocks/header.css";
-@import "blocks/breadcrumbs.css";
-@import "blocks/page-content.css";
-@import "blocks/banners.css";
-@import "blocks/image-box.css";
-@import "blocks/footer.css";
-@import "blocks/text__1.css";
-@import "blocks/text__2.css";
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+    padding: 0;
+    background:
+        url('../images/black-marble.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main {
+    flex-grow: 1;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(1.05);
+}
+
+.image-box {
+    position: relative;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.text__1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+    display: inline-block;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+.text--2 {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    border-bottom: none;
+    padding-bottom: 5px;
+}
+
+.text__2 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 24px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 48px;
+    display: inline-block;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+.text--3 {
+    top: 40%;
+    left: 50%;
+    border-bottom: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 5px;
+}
+
+.text--4 {
+    top: 47%;
+    left: 50%;
+    border-bottom: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 5px;
+}
+
+.text--5 {
+    top: 54%;
+    left: 50%;
+    border-bottom: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 5px;
+}
+
+.text--6 {
+    top: 61%;
+    left: 50%;
+    border-bottom: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    padding-bottom: 5px;
+}
+
+.text--7 {
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    line-height: 22px;
+    display: inline-block;
+    border-bottom: none;
+    padding-bottom: 5px;
+}
+
+.text--8 {
+    position: absolute;
+    top: 90%;
+    left: 16%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    line-height: 22px;
+    display: inline-block;
+    border-bottom: none;
+    padding-bottom: 5px;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-BoldItalic.ttf") format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-ExtraBoldItalic.ttf") format("truetype");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-SemiBold.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../../fonts/PlayfairDisplay-SemiBoldItalic.ttf") format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
